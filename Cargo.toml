@@ -1,0 +1,14 @@
+[workspace]
+members = ["dns", "ttfb", "downloader", "desktop"]
+
+
+[workspace.dependencies]
+anyhow = "1.0.72"
+serde_json = "1.0.104"
+log = "0.4"
+trust-dns-resolver = "0.22.0"
+reqwest = { version = "0.11.18" }
+tokio = { version = "1.29.1", features = ["full"] }
+simplelog = "0.12.1"
+time = "0.3.25"
+dns = { path = "./dns" }
