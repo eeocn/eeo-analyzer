@@ -1,1 +1,5 @@
-target
+target/
+static/
+dist/
+node_modules/
+.vscode/

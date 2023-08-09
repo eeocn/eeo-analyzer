@@ -6,5 +6,10 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+anyhow = { workspace = true }
+log = { workspace = true }
+dns = { workspace = true }
+reqwest = { workspace = true, features = ["json"] }
 dioxus = "0.4.0"
 dioxus-desktop = "0.4.0"
+dioxus-logger = { version = "*", features = ["timestamps"] }
